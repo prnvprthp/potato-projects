@@ -24,10 +24,11 @@ jobs:
         with:
           node-version: "24"
           cache: 'npm'
+      # No static_site_generator: next here on purpose. That option rewrites
+      # next.config.js to inject a basePath, which mangles our computed config.
+      # We set basePath ourselves in next.config.js instead.
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        with:
-          static_site_generator: next
       - name: Install dependencies
         run: npm install
       - name: Build with Next.js
