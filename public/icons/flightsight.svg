@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="FlightSight">
+  <defs>
+    <linearGradient id="fs-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4E97FA"/>
+      <stop offset="1" stop-color="#2F7BEB"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="118" fill="url(#fs-bg)"/>
+  <!-- paper plane: top wing -->
+  <path d="M404 110 L110 256 L236 302 Z" fill="#ffffff"/>
+  <!-- folded flap, subtly shaded for the crease -->
+  <path d="M404 110 L236 302 L282 402 Z" fill="#CFE2FF"/>
+</svg>
