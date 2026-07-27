@@ -379,15 +379,19 @@ section.group {
 .app-icon {
   width: 46px;
   height: 46px;
-  border-radius: 13px;
-  overflow: hidden;
   flex: none;
-  box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: grid;
+  place-items: center;
 }
+/* The icons are glass badges on a 555 canvas with transparent margins baked in.
+   Zoom slightly so the badge fills the tile; overflow clips the empty margin.
+   The SVGs carry their own soft glow, so no container shadow is needed. */
 .app-icon img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  transform: scale(1.32);
   display: block;
 }
 .mono-tile {
