@@ -22,7 +22,7 @@ export default function Home() {
           <a className="btn btn-primary" href="#web">
             Browse the projects
           </a>
-          <a className="btn btn-ghost" href={SITE.portfolioUrl}>
+          <a className="btn btn-ghost" href={SITE.portfolioAboutUrl}>
             A little about me →
           </a>
         </Reveal>

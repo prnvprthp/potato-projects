@@ -78,12 +78,15 @@ export default async function ProjectPage({
         <div className="d-actions">
           {project.links.map((l, i) => {
             const external = l.href.startsWith("http");
+            // Every download button is a primary (accent) action, so a
+            // cross-platform app shows its macOS and Windows options as equals.
+            const primary = i === 0 || l.label.toLowerCase().startsWith("download");
             return (
               <a
                 key={i}
-                className={`btn ${i === 0 ? "btn-accent" : "btn-ghost"}`}
+                className={`btn ${primary ? "btn-accent" : "btn-ghost"}`}
                 href={l.href}
-                style={i === 0 ? { background: "var(--accent)" } : undefined}
+                style={primary ? { background: "var(--accent)" } : undefined}
                 {...(external ? { target: "_blank", rel: "noopener" } : {})}
               >
                 {l.label}

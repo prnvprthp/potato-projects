@@ -204,7 +204,7 @@ export const PROJECTS: Project[] = [
     platform: "desktop",
     platformLabel: "macOS and Windows",
     status: "live",
-    version: "v1.0.0",
+    version: "v1.1.0",
     tagline:
       "The planes overhead, on a retro radar that sits quietly in your menu bar or system tray.",
     long: [
@@ -219,8 +219,12 @@ export const PROJECTS: Project[] = [
     stack: ["Swift", "SwiftUI", "ADS-B"],
     links: [
       {
-        label: "Download the DMG",
+        label: "Download for macOS",
         href: "https://github.com/prnvprthp/squawk/releases/latest/download/Squawk.dmg",
+      },
+      {
+        label: "Download for Windows",
+        href: "https://github.com/prnvprthp/squawk/releases/latest/download/Squawk-Windows.zip",
       },
       { label: "Source", href: "https://github.com/prnvprthp/squawk" },
     ],
@@ -249,8 +253,17 @@ export const PROJECTS: Project[] = [
   },
 ];
 
-export const WEB_PROJECTS = PROJECTS.filter((p) => p.platform === "web");
-export const DESKTOP_PROJECTS = PROJECTS.filter((p) => p.platform === "desktop");
+// Live apps first, "in the oven" last. Array.sort is stable, so projects with
+// the same status keep their authored order.
+const liveFirst = (a: Project, b: Project) =>
+  a.status === b.status ? 0 : a.status === "live" ? -1 : 1;
+
+export const WEB_PROJECTS = PROJECTS.filter((p) => p.platform === "web").sort(
+  liveFirst
+);
+export const DESKTOP_PROJECTS = PROJECTS.filter(
+  (p) => p.platform === "desktop"
+).sort(liveFirst);
 
 export function getProject(slug: string): Project | undefined {
   return PROJECTS.find((p) => p.slug === slug);
