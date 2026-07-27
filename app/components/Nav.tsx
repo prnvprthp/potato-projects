@@ -12,6 +12,7 @@ export function Nav() {
           Potato Projects
         </Link>
         <nav className="nav-links">
+          <Link href="/technology">Technology</Link>
           <a className="portfolio" href={SITE.portfolioUrl}>
             Portfolio ↗
           </a>

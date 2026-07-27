@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Reveal } from "@/app/components/Reveal";
 import { ProjectCard } from "@/app/components/ProjectCard";
 import { WEB_PROJECTS, DESKTOP_PROJECTS } from "@/lib/projects";
@@ -76,6 +77,7 @@ function Footer() {
       <div className="foot-meta">
         <span>Potato Projects, made by me, {SITE.maker}</span>
         <span>
+          <Link href="/technology">Technology</Link> &nbsp;·&nbsp;{" "}
           <a href={SITE.portfolioUrl}>Portfolio</a> &nbsp;·&nbsp;{" "}
           <a href={SITE.github} target="_blank" rel="noopener">
             GitHub

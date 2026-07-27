@@ -599,6 +599,84 @@ footer {
   flex-wrap: wrap;
 }
 
+/* ---------- prose / content page ---------- */
+.page {
+  padding: 52px 0 24px;
+  max-width: 680px;
+}
+.page > h1 {
+  font-size: clamp(2rem, 4.6vw, 2.9rem);
+  margin: 6px 0 0;
+}
+.page-lede {
+  margin: 18px 0 0;
+  color: var(--ink-soft);
+  font-size: 1.06rem;
+  line-height: 1.6;
+}
+.page section {
+  margin-top: 46px;
+}
+.page section > h2 {
+  font-size: 1.18rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  margin: 0 0 14px;
+}
+.page p {
+  margin: 0 0 14px;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.page p:last-child {
+  margin-bottom: 0;
+}
+.page a.inline {
+  color: var(--chrome);
+  border-bottom: 1px solid color-mix(in srgb, var(--chrome) 40%, transparent);
+}
+.page a.inline:hover {
+  border-bottom-color: var(--chrome);
+}
+.page ul.notes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.page ul.notes li {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+.page ul.notes li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-top: 9px;
+  flex: none;
+  border-radius: 2px;
+  background: var(--ink-faint);
+}
+/* stack groups reuse .stack + .tag from the project pages */
+.stack-group {
+  margin-top: 18px;
+}
+.stack-group > .label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 9px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     transition: none !important;
