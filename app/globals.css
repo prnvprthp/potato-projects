@@ -318,6 +318,9 @@ section.group {
   content: "";
   position: absolute;
   inset: 0;
+  /* Behind the card's content but above its background, so the card's own
+     children don't each need to be positioned to escape it. */
+  z-index: -1;
   border-radius: inherit;
   opacity: 0;
   background: radial-gradient(
@@ -335,12 +338,54 @@ section.group {
 .card:hover::before {
   opacity: 1;
 }
-.card:focus-visible {
+/* Focus now lands on the stretched link inside the card, not the card itself. */
+.card:focus-within {
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--hair));
+}
+.card-stretch:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
+  border-radius: 4px;
 }
 .card > * {
   position: relative;
+}
+
+/* The card title is the card's link: its ::after covers the whole card so the
+   entire surface stays clickable, without nesting <a> inside <a>. */
+.card-stretch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: inherit;
+  text-decoration: none;
+}
+.card-stretch::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+}
+
+/* Secondary link, lifted above the stretched link so it remains clickable. */
+.card-details {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin-top: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+.card-details:hover {
+  color: var(--accent);
+  border-bottom-color: color-mix(in srgb, var(--accent) 45%, transparent);
 }
 .card-top {
   display: flex;
@@ -356,6 +401,8 @@ section.group {
   display: flex;
   align-items: center;
   gap: 8px;
+  /* Static so .card-stretch::after measures against the card, not the heading. */
+  position: static;
 }
 .card h3 .arrow {
   color: var(--accent);

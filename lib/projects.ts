@@ -39,6 +39,17 @@ export function platformLabel(p: Project): string {
   return p.platform === "web" ? "Web app" : "Desktop app";
 }
 
+/**
+ * Where a card should send you: the app itself, not a detail page on the way to
+ * it. Only web apps open directly — a desktop app's first link is a platform
+ * specific download, and a card click should never start one. Those keep going
+ * to the detail page, where you pick macOS or Windows yourself.
+ */
+export function liveUrl(p: Project): string | undefined {
+  if (p.status !== "live" || p.platform !== "web") return undefined;
+  return p.links.find((l) => l.href.startsWith("http"))?.href;
+}
+
 export const PROJECTS: Project[] = [
   {
     slug: "days",
@@ -60,8 +71,7 @@ export const PROJECTS: Project[] = [
       "One place for the whole day",
     ],
     stack: ["Next.js 16", "React 19", "Supabase", "Vercel"],
-    // TODO: add the real live URL when you have it handy.
-    links: [{ label: "Open Days", href: "#" }],
+    links: [{ label: "Open Days", href: "https://days-track.vercel.app" }],
   },
   {
     slug: "kinship",
@@ -106,8 +116,7 @@ export const PROJECTS: Project[] = [
       "Recommendations that learn my taste",
     ],
     stack: ["Next.js 16", "Drizzle", "Supabase", "TMDB"],
-    // TODO: add the real live URL when you have it handy.
-    links: [{ label: "Open Marquee", href: "#" }],
+    links: [{ label: "Open Marquee", href: "https://marquee-inky.vercel.app" }],
   },
   {
     slug: "lift",
@@ -128,8 +137,7 @@ export const PROJECTS: Project[] = [
       "Weights, reps, cardio, and incline",
     ],
     stack: ["Next.js 16", "Drizzle", "Supabase"],
-    // TODO: add the real live URL when you have it handy.
-    links: [{ label: "Open Lift", href: "#" }],
+    links: [{ label: "Open Lift", href: "https://lift-spirit.vercel.app" }],
   },
   {
     slug: "storied",
