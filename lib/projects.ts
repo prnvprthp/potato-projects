@@ -204,19 +204,21 @@ export const PROJECTS: Project[] = [
     platform: "desktop",
     platformLabel: "macOS and Windows",
     status: "live",
-    version: "v1.1.0",
+    version: "v1.2.0",
     tagline:
       "The planes overhead, on a retro radar that sits quietly in your menu bar or system tray.",
     long: [
       "Squawk started as a small curiosity about the planes flying over my house. It lives in the menu bar, or the Windows system tray, and shows the aircraft near me on a sweeping retro radar.",
-      "The data comes from keyless, open ADS-B feeds. It runs on both macOS and Windows, and on the Mac it comes with a matching screensaver too.",
+      "The data comes from keyless, open ADS-B feeds. It runs on both macOS and Windows, and each one comes with a matching screensaver.",
+      "It does not have to watch your own sky, either. Point it at a city, an airport code, or a pair of coordinates and the radar moves there.",
     ],
     highlights: [
       "Live planes on a sweeping radar",
+      "Point it at any city or airport",
       "Keyless, open ADS-B data",
       "Runs on macOS and Windows",
     ],
-    stack: ["Swift", "SwiftUI", "ADS-B"],
+    stack: ["Swift", "SwiftUI", "C#", "ADS-B"],
     links: [
       {
         label: "Download for macOS",
