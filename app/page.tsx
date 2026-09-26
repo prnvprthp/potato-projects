@@ -76,13 +76,13 @@ function Footer() {
       </div>
       <div className="foot-meta">
         <span>Potato Projects, made by me, {SITE.maker}</span>
-        <span>
-          <Link href="/technology">Technology</Link> &nbsp;·&nbsp;{" "}
-          <a href={SITE.portfolioUrl}>Portfolio</a> &nbsp;·&nbsp;{" "}
+        <span className="foot-links">
+          <Link href="/technology">Technology</Link>
+          <a href={SITE.portfolioUrl}>Portfolio</a>
           <a href={SITE.github} target="_blank" rel="noopener">
             GitHub
-          </a>{" "}
-          &nbsp;·&nbsp; <a href={`mailto:${SITE.email}`}>Email</a>
+          </a>
+          <a href={`mailto:${SITE.email}`}>Email</a>
         </span>
       </div>
     </footer>

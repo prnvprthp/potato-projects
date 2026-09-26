@@ -7,9 +7,9 @@ export function Nav() {
   return (
     <header className="nav">
       <div className="wrap nav-inner">
-        <Link className="brand" href="/">
+        <Link className="brand" href="/" aria-label="Potato Projects, home">
           <PotatoMark />
-          Potato Projects
+          <span className="brand-name">Potato Projects</span>
         </Link>
         <nav className="nav-links">
           <Link href="/technology">Technology</Link>
