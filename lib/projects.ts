@@ -268,6 +268,51 @@ export const PROJECTS: Project[] = [
     stack: ["Swift", "SwiftUI", "GTFS"],
     links: [{ label: "Coming soon", href: "#" }],
   },
+  {
+    slug: "tankful",
+    name: "Tankful",
+    mono: "T",
+    accent: "#7CB518",
+    icon: "/icons/tankful.svg",
+    platform: "web",
+    status: "build",
+    tagline:
+      "Tells you where to stop for gas on a road trip, and how much to buy at each one.",
+    long: [
+      "Tankful works out the cheapest way to drive somewhere. You tell it where you're going and how much range you have left, and it plans the fuel stops around the stations you'd actually pull into.",
+      "It chains the trip through the brands you pick — Costco first, if you're a member — and only sends you somewhere else when the next one is out of range. There's always a buffer built in, because I didn't want an app that saves me four dollars by having me coast in on fumes.",
+      "When the plan is ready it hands the whole thing to Google Maps with the stops already in it, so there's nothing left to type in.",
+    ],
+    highlights: [
+      "Chains your trip through the brands you choose",
+      "Always leaves a comfortable reserve in the tank",
+      "Opens in Google Maps with every stop already added",
+    ],
+    stack: ["Next.js", "TypeScript", "Supabase", "OpenStreetMap"],
+    links: [{ label: "Open", href: "https://tankful-trip.vercel.app" }],
+  },
+  {
+    slug: "spent",
+    name: "Spent",
+    mono: "S",
+    accent: "#B4794A",
+    platform: "web",
+    status: "build",
+    tagline:
+      "Tracks where the money went, and works out who owes who.",
+    long: [
+      "Spent is two apps that turned out to be one. Half of it reads my bank and card statements and sorts out where the money actually goes. The other half splits things with the people I spend it with, and keeps a running total of who's ahead.",
+      "Keeping them together is the whole point. A dinner on the card can become a split without me typing it in twice, a shared subscription divides itself every month, and I get one net figure per person instead of a separate app to go and check.",
+      "It reads the statements itself rather than asking a bank aggregator to do it, which keeps the whole thing free and keeps the statements on my own machine.",
+    ],
+    highlights: [
+      "Turns a statement line straight into a split",
+      "One net balance per person, across every group",
+      "Reads bank and card PDFs without a paid data provider",
+    ],
+    stack: ["Next.js", "TypeScript", "Supabase", "Drizzle"],
+    links: [],
+  },
 ];
 
 // Live apps first, "in the oven" last. Array.sort is stable, so projects with
