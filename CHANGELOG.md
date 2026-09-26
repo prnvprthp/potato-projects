@@ -9,6 +9,14 @@ entry, bumped alongside `lib/version.ts` and `package.json`.
 
 ---
 
+## 1.1.0 — *26 Sep 2026*
+
+### Added
+- **Faraway** (v0.5.0): a live wall of famous places, as a screensaver for macOS and Fire TV,
+  with download buttons wired to its public GitHub release assets and its own icon.
+
+---
+
 ## 1.0.0 — *30 Jul 2026*
 
 ### Added

@@ -247,6 +247,41 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
+    slug: "faraway",
+    name: "Faraway",
+    mono: "▦",
+    accent: "#B8690F",
+    icon: "/icons/faraway.svg",
+    platform: "desktop",
+    platformLabel: "macOS and Fire TV",
+    status: "live",
+    version: "v0.5.0",
+    tagline:
+      "A live wall of famous places around the world, as a screensaver for your Mac or TV.",
+    long: [
+      "Faraway fills the screen with live cameras from famous places: Times Square, Sydney Harbour, Mount Fuji, the Rhine Falls, a coral reef, a waterhole in Kenya. Four or nine at a time, or one big one.",
+      "I picked every view by hand. No traffic lights or street corners, just landmarks and scenery, and each one was checked to be sharp and in HD. Views sit out when it's dark where they are, so it never turns into a wall of black squares at 3 am.",
+      "On the Mac it takes over when the computer has been idle and disappears the moment you touch anything. On Fire TV it's a screensaver, where you can pick the places and how long each one stays up.",
+    ],
+    highlights: [
+      "Hand-picked landmarks and scenery, live and in HD",
+      "Skips places where it's dark right now",
+      "A screensaver for the Mac and for Fire TV",
+    ],
+    stack: ["Next.js", "TypeScript", "Swift", "Java", "YouTube"],
+    links: [
+      {
+        label: "Download for macOS",
+        href: "https://github.com/prnvprthp/faraway/releases/latest/download/Faraway.dmg",
+      },
+      {
+        label: "Download for Fire TV",
+        href: "https://github.com/prnvprthp/faraway/releases/latest/download/Faraway-FireTV.apk",
+      },
+      { label: "Install guide", href: "https://github.com/prnvprthp/faraway" },
+    ],
+  },
+  {
     slug: "turnstile",
     name: "Turnstile",
     mono: "╪",

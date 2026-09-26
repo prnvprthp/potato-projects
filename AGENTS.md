@@ -7,7 +7,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 # Potato Projects
 
 The umbrella hub for Pranav's personal software suite (Days, Kinship, Marquee, Lift,
-Storied, FlightSight, Kept, Squawk, Turnstile). Static-exported Next.js front door that
+Storied, FlightSight, Kept, Squawk, Faraway, Turnstile). Static-exported Next.js front door that
 showcases every project and cross-links the personal portfolio. Dev port 3000.
 
 - **Single source of truth:** `lib/projects.ts`. Add a project = add one object there.
