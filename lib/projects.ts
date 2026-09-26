@@ -212,7 +212,7 @@ export const PROJECTS: Project[] = [
     platform: "desktop",
     platformLabel: "macOS, Windows and Fire TV",
     status: "live",
-    version: "v1.3.0",
+    version: "v1.4.0",
     tagline:
       "The planes overhead, on a retro radar that sits quietly in your menu bar or system tray.",
     long: [
@@ -225,6 +225,7 @@ export const PROJECTS: Project[] = [
       "Live planes on a sweeping radar",
       "Point it at any city or airport",
       "Keyless, open ADS-B data",
+      "Flags planes taking off and landing nearby",
       "Runs on macOS and Windows",
       "A screensaver for Fire TV",
     ],
