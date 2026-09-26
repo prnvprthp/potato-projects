@@ -10,8 +10,8 @@ pick-up-where-we-left-off reference for any coding agent or human.
 ## ⏯️ Pick up here (current state)
 
 - **Local / committed:** v1.0.0
-- **Deployed to prod:** Vercel (static export)
-- **To deploy:** `git push` → Vercel auto-deploys. No database, no migrations.
+- **Deployed to prod:** GitHub Pages (static export) — https://prnvprthp.github.io/potato-projects/
+- **To deploy:** `git push` to `main` → `.github/workflows/deploy.yml` builds and publishes to Pages. No database, no migrations.
 - **Last thing built:** project registry + detail routes + download buttons
 
 ### Immediate next steps

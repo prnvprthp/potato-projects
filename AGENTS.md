@@ -12,7 +12,7 @@ showcases every project and cross-links the personal portfolio. Dev port 3000.
 
 - **Single source of truth:** `lib/projects.ts`. Add a project = add one object there.
   A new app is invisible on the hub until this exists.
-- **Static export** (`output: 'export'`) → deploys to Vercel as static assets. Detail
+- **Static export** (`output: 'export'`) → deploys to GitHub Pages as static assets (`.github/workflows/deploy.yml`, on every push to `main`). Detail
   routes rely on `generateStaticParams`.
 - **Real app icons** live in `public/icons/`. Add one and point the project's `icon`
   field at it; projects with no icon fall back to an accent monogram tile.
