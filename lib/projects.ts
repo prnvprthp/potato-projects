@@ -210,14 +210,15 @@ export const PROJECTS: Project[] = [
     mono: "◎",
     accent: "#2FCB6E",
     platform: "desktop",
-    platformLabel: "macOS and Windows",
+    platformLabel: "macOS, Windows and Fire TV",
     status: "live",
-    version: "v1.2.0",
+    version: "v1.3.0",
     tagline:
       "The planes overhead, on a retro radar that sits quietly in your menu bar or system tray.",
     long: [
       "Squawk started as a small curiosity about the planes flying over my house. It lives in the menu bar, or the Windows system tray, and shows the aircraft near me on a sweeping retro radar.",
       "The data comes from keyless, open ADS-B feeds. It runs on both macOS and Windows, and each one comes with a matching screensaver.",
+      "The screensaver also runs on Fire TV. It shows one plane at a time, with its route, altitude and speed, next to a radar of everything else in range.",
       "It does not have to watch your own sky, either. Point it at a city, an airport code, or a pair of coordinates and the radar moves there.",
     ],
     highlights: [
@@ -225,8 +226,9 @@ export const PROJECTS: Project[] = [
       "Point it at any city or airport",
       "Keyless, open ADS-B data",
       "Runs on macOS and Windows",
+      "A screensaver for Fire TV",
     ],
-    stack: ["Swift", "SwiftUI", "C#", "ADS-B"],
+    stack: ["Swift", "SwiftUI", "C#", "Java", "ADS-B"],
     links: [
       {
         label: "Download for macOS",
@@ -235,6 +237,10 @@ export const PROJECTS: Project[] = [
       {
         label: "Download for Windows",
         href: "https://github.com/prnvprthp/squawk/releases/latest/download/Squawk-Windows.zip",
+      },
+      {
+        label: "Download for Fire TV",
+        href: "https://github.com/prnvprthp/squawk/releases/latest/download/Squawk-FireTV.apk",
       },
       { label: "Source", href: "https://github.com/prnvprthp/squawk" },
     ],
