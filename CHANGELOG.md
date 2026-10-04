@@ -9,6 +9,14 @@ entry, bumped alongside `lib/version.ts` and `package.json`.
 
 ---
 
+## 1.2.0 — *4 Oct 2026*
+
+### Added
+- **Abode** (v0.8.0, live): a house designer for a real plot, with terrain, auto-planned rooms you edit by
+  asking, roofs, a Vastu advice layer, share links and a PDF drawing set. Sign-in is the suite's account, on an allow-list.
+
+---
+
 ## 1.1.0 — *26 Sep 2026*
 
 ### Added

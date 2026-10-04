@@ -348,6 +348,30 @@ export const PROJECTS: Project[] = [
     stack: ["Next.js", "TypeScript", "Supabase", "Drizzle"],
     links: [],
   },
+  {
+    slug: "abode",
+    name: "Abode",
+    mono: "A",
+    accent: "#2F6F5E",
+    icon: "/icons/abode.svg",
+    platform: "web",
+    status: "live",
+    tagline:
+      "Design a house on a real plot: the terrain, the rooms, the roof, and what Vastu says about it.",
+    long: [
+      "Abode is for planning a house before anyone lays a brick. You drop in a pin or an address and it pulls the real ground, the elevation, the nearest road and which way is north, then you draw walls, stairs and a roof on a graded pad and walk through the result.",
+      "Because I'm planning a home in Kerala, it carries an optional Vastu layer. It lays the compass zones over the plan and checks each room against the rules for Kerala, Tamil Nadu or Andhra and Telangana, and it only ever advises. It never moves anything for me.",
+      "You don't have to draw: say how many floors, bedrooms and rooms, then ask for changes in plain words (\"move the pooja room to the north-east\") and it lays the house out. Designs save to your account, share as view-only links, and export as a PDF drawing set.",
+      "It also keeps count: a limit on how much area I'm allowed to build, a spec sheet with every room, wall and window, and a little landscaping around the lot. All of it runs in the browser, on free map data.",
+    ],
+    highlights: [
+      "Reads terrain, elevation and the road from a pin or a Google Maps link",
+      "Vastu checks by region, advice only",
+      "Auto-planned layouts you edit by asking, plus a PDF drawing set",
+    ],
+    stack: ["Next.js 16", "React Three Fiber", "OpenStreetMap", "TypeScript"],
+    links: [{ label: "Open Abode", href: "https://abode-home.vercel.app" }],
+  },
 ];
 
 // Live apps first, "in the oven" last. Array.sort is stable, so projects with
