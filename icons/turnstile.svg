@@ -1,0 +1,33 @@
+<svg width="555" height="555" viewBox="0 0 555 555" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#turnstile_f0)">
+<circle cx="277.5" cy="277.5" r="157.5" fill="url(#turnstile_p0)"/>
+</g>
+<g opacity="0.42" filter="url(#turnstile_f1)">
+<circle cx="350" cy="350" r="100" fill="url(#turnstile_p1)"/>
+</g>
+<g stroke="black" stroke-opacity="0.69" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="M185 300H250L305 245H370"/>
+<path d="M277.5 190V365" stroke-opacity="0.45"/>
+</g>
+<circle cx="277.5" cy="272.5" r="19" fill="white" fill-opacity="0.85" stroke="black" stroke-opacity="0.69" stroke-width="10"/>
+<defs>
+<filter id="turnstile_f0" x="0" y="0" width="555" height="555" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="60" result="effect1"/>
+</filter>
+<filter id="turnstile_f1" x="200" y="200" width="300" height="300" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="25" result="effect1"/>
+</filter>
+<linearGradient id="turnstile_p0" x1="277.5" y1="120" x2="277.5" y2="435" gradientUnits="userSpaceOnUse">
+<stop offset="0.375" stop-color="#12A6A0"/>
+<stop offset="1" stop-color="#7FD8F0"/>
+</linearGradient>
+<linearGradient id="turnstile_p1" x1="350" y1="250" x2="350" y2="450" gradientUnits="userSpaceOnUse">
+<stop offset="0.4" stop-color="#F2C14E"/>
+<stop offset="0.9" stop-color="#0E7C86"/>
+</linearGradient>
+</defs>
+</svg>
